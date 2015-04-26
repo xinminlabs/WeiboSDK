@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 openlab. All rights reserved.
 //
 
-#import "User.h"
+#import "WeiboUser.h"
 #import "NSDictionary+Json.h"
 #import "Resources.h"
 
-@implementation User
+@implementation WeiboUser
 
 
 //===========================================================

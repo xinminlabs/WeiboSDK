@@ -13,7 +13,7 @@
 		151006F217ACE45B006F9275 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151006D917ACE45B006F9275 /* libWeiboSDK.a */; };
 		151006F817ACE45B006F9275 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 151006F617ACE45B006F9275 /* InfoPlist.strings */; };
 		151006FB17ACE45B006F9275 /* WeiboSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 151006FA17ACE45B006F9275 /* WeiboSDKTests.m */; };
-		1510070817ACE767006F9275 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510070717ACE767006F9275 /* User.m */; };
+		1510070817ACE767006F9275 /* WeiboUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510070717ACE767006F9275 /* WeiboUser.m */; };
 		1510070F17ACE90D006F9275 /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510070E17ACE90D006F9275 /* NSDictionary+Json.m */; };
 		1510071817ACEF23006F9275 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510071717ACEF23006F9275 /* Resources.m */; };
 		1510071B17ACEF36006F9275 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510071A17ACEF36006F9275 /* Status.m */; };
@@ -28,7 +28,7 @@
 		1510074917AD54B3006F9275 /* WeiboAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510074817AD54B3006F9275 /* WeiboAccounts.m */; };
 		1510074C17AD56FC006F9275 /* PathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510074B17AD56FB006F9275 /* PathHelper.m */; };
 		1510074F17AD6451006F9275 /* WeiboSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510074E17AD6451006F9275 /* WeiboSignIn.m */; };
-		1510075117AD711D006F9275 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = 1510070617ACE767006F9275 /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1510075117AD711D006F9275 /* WeiboUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1510070617ACE767006F9275 /* WeiboUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1510075217AD714D006F9275 /* Status.h in Headers */ = {isa = PBXBuildFile; fileRef = 1510071917ACEF36006F9275 /* Status.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1510075317AD714D006F9275 /* GeoInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1510071C17ACEF84006F9275 /* GeoInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1510075417AD714D006F9275 /* StatusVisible.h in Headers */ = {isa = PBXBuildFile; fileRef = 1510071F17ACF35B006F9275 /* StatusVisible.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,8 +79,8 @@
 		151006F717ACE45B006F9275 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		151006F917ACE45B006F9275 /* WeiboSDKTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboSDKTests.h; sourceTree = "<group>"; };
 		151006FA17ACE45B006F9275 /* WeiboSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboSDKTests.m; sourceTree = "<group>"; };
-		1510070617ACE767006F9275 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		1510070717ACE767006F9275 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		1510070617ACE767006F9275 /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		1510070717ACE767006F9275 /* WeiboUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboUser.m; sourceTree = "<group>"; };
 		1510070D17ACE90D006F9275 /* NSDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Json.h"; sourceTree = "<group>"; };
 		1510070E17ACE90D006F9275 /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
 		1510071617ACEF23006F9275 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
@@ -225,8 +225,8 @@
 		1510070417ACE709006F9275 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1510070617ACE767006F9275 /* User.h */,
-				1510070717ACE767006F9275 /* User.m */,
+				1510070617ACE767006F9275 /* WeiboUser.h */,
+				1510070717ACE767006F9275 /* WeiboUser.m */,
 				1510071917ACEF36006F9275 /* Status.h */,
 				1510071A17ACEF36006F9275 /* Status.m */,
 				1510071C17ACEF84006F9275 /* GeoInfo.h */,
@@ -319,7 +319,7 @@
 				1510076117AD7170006F9275 /* NSDictionary+Json.h in Headers */,
 				1510080917AE8D8D006F9275 /* Weibo.h in Headers */,
 				151007FD17AE751E006F9275 /* WeiboRequest.h in Headers */,
-				1510075117AD711D006F9275 /* User.h in Headers */,
+				1510075117AD711D006F9275 /* WeiboUser.h in Headers */,
 				151007F917AE70A3006F9275 /* WeiboRequestOperation.h in Headers */,
 				1510075F17AD7170006F9275 /* PathHelper.h in Headers */,
 				1510076017AD7170006F9275 /* Resources.h in Headers */,
@@ -367,7 +367,7 @@
 			name = WeiboSDKTests;
 			productName = WeiboSDKTests;
 			productReference = 151006EA17ACE45B006F9275 /* WeiboSDKTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -428,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1510070817ACE767006F9275 /* User.m in Sources */,
+				1510070817ACE767006F9275 /* WeiboUser.m in Sources */,
 				1510070F17ACE90D006F9275 /* NSDictionary+Json.m in Sources */,
 				1510071817ACEF23006F9275 /* Resources.m in Sources */,
 				1510071B17ACEF36006F9275 /* Status.m in Sources */,

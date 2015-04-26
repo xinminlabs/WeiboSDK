@@ -8,18 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "WeiboAuthentication.h"
-#import "User.h"
+#import "WeiboUser.h"
 
 // 登录帐号信息
 @interface WeiboAccount : NSObject<NSCoding>
 
 - (id)initWithAuthentication:(WeiboAuthentication *)auth
-                        user:(User *)user;
+                        user:(WeiboUser *)user;
 
 @property (nonatomic, copy) NSString *userId; //用户Id
 @property (nonatomic, copy) NSString *accessToken; //授权凭证
 @property (nonatomic, strong) NSDate *expirationDate; //过期时间
-@property (nonatomic, strong) User *user;
+@property (nonatomic, strong) WeiboUser *user;
 @property (nonatomic, assign) BOOL selected; //是否选中（当前用户）
 
 @end

@@ -49,7 +49,7 @@
         }
         NSDictionary *userDic = [dic dictionaryValueForKey:@"user"];
         if (userDic) {
-            self.user = [[User alloc]initWithJsonDictionary:userDic];
+            self.user = [[WeiboUser alloc]initWithJsonDictionary:userDic];
         }
         else {
             self.user = nil;

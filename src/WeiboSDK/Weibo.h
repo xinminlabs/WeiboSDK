@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "WeiboRequest.h"
 #import "Status.h"
-#import "User.h"
+#import "WeiboUser.h"
 #import "WeiboAccount.h"
 
 enum {
@@ -19,7 +19,7 @@ enum {
 };
 
 typedef void(^WeiboTimelineQueryCompletedBlock)(NSMutableArray *statuses, NSError *error);
-typedef void(^WeiboUserQueryCompletedBlock)(User *user, NSError *error);
+typedef void(^WeiboUserQueryCompletedBlock)(WeiboUser *user, NSError *error);
 typedef void(^WeiboUserAuthenticationCompletedBlock)(WeiboAccount *account, NSError *error);
 typedef void(^WeiboNewStatusCompletedBlock)(Status *status, NSError *error);
 

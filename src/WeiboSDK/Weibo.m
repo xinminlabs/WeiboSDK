@@ -76,7 +76,7 @@ static Weibo *g_weibo = nil;
             NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:auth.userId, @"uid", auth.accessToken, @"access_token", nil];
             [self queryUserWithPath:@"users/show.json"
                              params:params
-                          completed:^(User *user, NSError *error) {
+                          completed:^(WeiboUser *user, NSError *error) {
                               self.weiboSignIn = nil;
                               if (error) {
                                   completedBlock(nil, error);
@@ -124,7 +124,7 @@ static Weibo *g_weibo = nil;
                                  }
                                  else {
                                      @try {
-                                         User *user = [[User alloc]initWithJsonDictionary:result];
+                                         WeiboUser *user = [[WeiboUser alloc]initWithJsonDictionary:result];
                                          completedBlock(user, nil);
                                      }
                                      @catch (NSException *exception) {

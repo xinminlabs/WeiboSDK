@@ -7,7 +7,7 @@
 //
 
 #import "Weibo.h"
-#import "User.h"
+#import "WeiboUser.h"
 #import "Status.h"
 #import "GeoInfo.h"
 #import "StatusVisible.h"

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
+#import "WeiboUser.h"
 #import "GeoInfo.h"
 #import "StatusImage.h"
 
@@ -35,7 +35,7 @@
 @property (nonatomic, assign) int commentsCount; //评论数
 @property (nonatomic, assign) int attitudesCount; //赞
 @property (nonatomic, retain) GeoInfo *geo; //地理信息字段
-@property (nonatomic, strong) User *user; //微博作者的用户信息字段
+@property (nonatomic, strong) WeiboUser *user; //微博作者的用户信息字段
 @property (nonatomic, strong) Status *retweetedStatus; // 转发微博
 @property (nonatomic, readonly) NSNumber *statusKey;
 

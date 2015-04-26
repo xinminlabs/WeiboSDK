@@ -16,7 +16,7 @@
 }
 
 - (id)initWithAuthentication:(WeiboAuthentication *)auth
-                        user:(User *)user {
+                        user:(WeiboUser *)user {
     self = [super init];
     if (self) {
         self.accessToken = auth.accessToken;

@@ -20,7 +20,7 @@ typedef enum {
     OnlineStatusOnline = 1,
 } OnlineStatus;
 
-@interface User : NSObject<NSCoding>
+@interface WeiboUser : NSObject<NSCoding>
 
 - (id)initWithJsonDictionary:(NSDictionary*)dic;
 
